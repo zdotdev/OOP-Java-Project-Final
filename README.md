@@ -9,7 +9,7 @@
 ## Installation
 
 1. Open a Terminal or Command Prompt
-2. Run this code `git clone https://github.com/dimaliwatkent/oop-project.git`
+2. Run this code `git clone https://github.com/zdotdev/OOP-Java-Project-Final`
 
 
 3. Run `cd oop-project`
