@@ -2,11 +2,17 @@ import java.io.IOException;
 import java.util.Scanner;
 
 class ParentClass {
-  void show(String message) { System.out.println("Parent: " + message); }
+  void show(String message) {
+    System.out.println("Parent: " + message);
+  }
 }
+
 class ChildClass extends ParentClass {
-  void show(String message) { System.out.println("Child: " + message); }
+  void show(String message) {
+    System.out.println("Child: " + message);
+  }
 }
+
 class MethodOverriding {
   public static void run() {
     Scanner scanner = new Scanner(System.in);
@@ -65,7 +71,7 @@ class MethodOverriding {
 
     String codeParent = "";
     while (!codeParent.equals(parentClassName + " parent = new " +
-                              parentClassName + "();")) {
+        parentClassName + "();")) {
       System.out.print("Code: ");
       codeParent = scanner.nextLine();
     }
@@ -82,11 +88,11 @@ class MethodOverriding {
     clearConsole();
     System.out.println(
         "Now, let's have the Child Class to the party. Change the <ChildClass> with your Child Class Name");
-    System.out.println("Clue: <ParentClass> child = new <ChildClass>();");
+    System.out.println("Clue: <ChildClass> child = new <ChildClass>();");
 
     String codeChild = "";
-    while (!codeChild.equals(parentClassName + " child = new " +
-                             childClassName + "();")) {
+    while (!codeChild.equals(childClassName + " child = new " +
+        childClassName + "();")) {
       System.out.print("Code: ");
       codeChild = scanner.nextLine();
     }
@@ -104,29 +110,31 @@ class MethodOverriding {
     System.out.println("class " + parentClassName + " {");
     System.out.println("  void show() {");
     System.out.println("    System.out.println(\"Parent: " + parentMessage +
-                       "\");");
+        "\");");
     System.out.println("  }");
     System.out.println("}");
     System.out.println("class " + childClassName + " extends " +
-                       parentClassName + " {");
+        parentClassName + " {");
     System.out.println("  void show() {");
     System.out.println("    System.out.println(\"Child: " + childMessage +
-                       "\");");
+        "\");");
     System.out.println("  }");
     System.out.println("}");
     System.out.println("public class Main {");
     System.out.println("  public static void main(String[] args) {");
     System.out.println("    " + parentClassName + " parent = new " +
-                       parentClassName + "();");
+        parentClassName + "();");
     System.out.println("    parent.show();");
     System.out.println("    " + parentClassName + " child = new " +
-                       childClassName + "();");
+        childClassName + "();");
     System.out.println("    child.show();");
 
     while (true) {
       System.out.print("\nWould you like to run your code? type yes: ");
       String yes = scanner.nextLine();
       if (yes.equals("yes")) {
+        break;
+      } else {
         break;
       }
     }
@@ -144,6 +152,7 @@ class MethodOverriding {
       e.printStackTrace();
     }
   }
+
   public static void clearConsole() {
     System.out.print("\033[H\033[2J");
     System.out.flush();
