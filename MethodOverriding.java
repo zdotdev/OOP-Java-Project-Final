@@ -125,7 +125,7 @@ class MethodOverriding {
     System.out.println("    " + parentClassName + " parent = new " +
         parentClassName + "();");
     System.out.println("    parent.show();");
-    System.out.println("    " + parentClassName + " child = new " +
+    System.out.println("    " + childClassName + " child = new " +
         childClassName + "();");
     System.out.println("    child.show();");
 
