@@ -1,0 +1,124 @@
+Make me a java code where it teaches the user how to write a java program
+that
+like w3school, it should ask the user input to be put on the code
+
+interaction:
+
+AI: Method overriding in Java is a feature that allows a subclass or child class to provide a specific implementation of a method that is already provided by its parent class or superclass. The method in the child class must have the same name, return type, and parameters as the one in its parent class.
+
+AI: now lets move on to examples, this is how a Method overriding looks like:
+```class ParentClass {
+   void show() { 
+       System.out.println(Parent: <Say Something>); 
+   }
+}
+
+class ChildClass extends ParentClass {
+   void show() {
+       System.out.println(Child: <Say Something>);
+   }
+}```
+
+AI: Now lets pick a name for a Parent Class
+    Enter a Name:
+    Say something:
+AI: Now lets pick a name for a Child Class
+    Enter a Name: 
+    Say Something: 
+
+AI: Now lets move on to making instance, the main should look like this:
+```public class Main {
+   public static void main(String[] args) {
+       ParentClass parent = new ParentClass();
+       parent.show(); // prints "Parent's show()"
+
+       ParentClass child = new ChildClass ();
+       child.show(); // prints "Child's show()"
+   }
+}```
+AI: Only change words that are inside the less than and greater than sign <this>
+    Now write the instantiation of the Parent Class
+    Code:
+    Now call the function show.() with the Parent Class
+    Code:
+    Great!
+
+AI: Only change words that are inside the less than and greater than sign <this>
+    Now write the instantiation of the Child Class
+    Code:
+    Now call the function show.() with the Child Class
+    Code:
+    Great!
+AI: This is how your code looks like:
+<code>
+AI: would you like to run it yes or no
+
+
+
+=======================================
+
+
+
+
+AI: Hey there, let's dive into the exciting world of Java method overriding! It's like a party where the parent class is the DJ and the child class is the guest who decides to show off their own moves. The rules are simple: the child class must have the same name, return type, and parameters as the parent class, but it can add its own twist to the party!
+
+AI: Now, let's get creative! What should we name our parent class?
+   Enter a Name:
+AI: Alright, let's name our child class. Remember, it's like a party guest who's a bit more outgoing and loves to steal the spotlight!
+   Enter a Name: 
+
+AI: Great! Now, let's see how our party unfolds. Here's how it looks:
+
+class ParentClass { void show() { System.out.println(Parent: <Say Something>); } }
+
+class ChildClass extends ParentClass { void show() { System.out.println(Child: <Say Something>); } }
+
+
+AI: Now, let's invite our guests to the party. The main should look like this:
+
+public class Main { 
+  public static void main(String[] args) {
+  ParentClass parent = new ParentClass(); 
+  parent.show(); 
+  ParentClass child = new ChildClass ();
+  child.show(); 
+  } 
+}
+
+AI: Now, let's add some fun to the party! Only change words that are inside the less than and greater than sign <this>
+   Now, let's invite the Parent Class to the party. What's the Parent Class's name?
+   Code:
+   Now, let's call the function show.() with the Parent Class. What should the Parent Class say?
+   Code:
+   Yay!
+
+AI: Let's add some more fun to the party! Only change words that are inside the less than and greater than sign <this>
+   Now, let's invite the Child Class to the party. What's the Child Class's name?
+   Code:
+   Now, let's call the function show.() with the Child Class. What should the Child Class say?
+   Code:
+   Yay!
+AI: This is how your party looks like:
+<code>
+AI: Would you like to run it, yes or no?
+
+
+class ParentClass { 
+  void show() { 
+    System.out.println(Parent: <Say Something>); 
+  } 
+}
+class ChildClass extends ParentClass { 
+  void show() { 
+    System.out.println(Child: <Say Something>); 
+  } 
+}
+public class Main {
+   public static void main(String[] args) {
+       ParentClass parent = new ParentClass();
+       parent.show(); 
+
+       ParentClass child = new ChildClass ();
+       child.show();
+  }
+}
